@@ -1,0 +1,30 @@
+Quand on décide de réaliser un projet en programmation et de le sauvegarder sur git, on doit préparer le dossier afin que les commits puissent se faire facilement. Nous avons donc les étapes suivantes
+
+1- créer le dossier du projet à l'endroit voulu. Disque C ou D.
+2- faire clic droit dans l'emplacement choisi et selectionner "Git bash here", ce qui ouvrira un terminal git.
+3- s'assurer qu'on est bien à la racine du Dossier voulu, et ensuite rentrer les commandes suivantes pour initialiser notre git:
+Il est important de noter que ces deux commandes ci dessous cités, se font uniquement si l'on change d'ordinateur. Par conséquent, il n'est pas pas nécessaire de les faire ici, car je l'ai déja réalisé sur cet ordinateur 
+    git config --global user.name “jptch3”
+    git config --global user.email “jptch3@gmail.com”
+
+
+4- pour initialiser le projet en tant que dépôt git on entre la commande suivante
+    1- git init [project name]   cela va générer un dossier [project name], dans lequel se trouvera un dossier flou intitulé .git
+    2- on saisis ensuite dans le terminal code 
+    cela ouvrira vscode à la racine du projet.
+Cette commande ci dessus, je la réalise à chaque fois que je commence un nouveau projet
+
+5- je dois ensuite créer un dépôt distant sur mon github pour ce nouveau projet. Le process est le suivant
+    1- je me connecte à mon github
+    2- je fais créer un nouveau repositoryZ
+    3- je donne un nom à ce repository
+    4- j'enregistre et je copie le lien <https://github.com/jptch3/[project name].git>
+
+6- je vais la suite indiquer le chemin vers ce repository à mon dossier en faisant
+    git remote add <name_repository> <url_repository>
+
+7- Pour sauvegarder mes dossiers sur le dépôt distant, je peux donc suivre la procédure habituelle donnée dans le git cheat sheet que j'ai téléchargé
+
+8- Il est possible de demander à Git d'ignorer des fichiers ou dossiers. Pour ce faire, on cré sous le dossier .git, un dossier du nom .gitignore
+   Tous les fichiers et dossiers qui y seront enregistrés ne seront pas commités par git. 
+    
